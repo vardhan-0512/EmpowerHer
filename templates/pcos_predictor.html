@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCOS Risk Assessment Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='pcos.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>PCOS Risk Assessment Form</header><br>
+        <form action="{{ url_for('predict_pcos') }}" method="POST">
+            <div class="fields">
+                <div>
+                    <label>Do you have irregular periods?</label>
+                    <p><input type="radio" name="irregular_periods" value="Yes">Yes</p>
+                    <p><input type="radio" name="irregular_periods" value="No">No</p><br>
+                    
+                    <label>Do you have excessive hair growth on your face, chest, or back?</label>
+                    <p><input type="radio" name="excessive_hair_growth" value="Yes">Yes</p>
+                    <p><input type="radio" name="excessive_hair_growth" value="No">No</p><br>
+                    
+                    <label>Do you experience acne or oily skin?</label>
+                    <p><input type="radio" name="acne_oily_skin" value="Yes">Yes</p>
+                    <p><input type="radio" name="acne_oily_skin" value="No">No</p><br>
+                    
+                    <label>Have you experienced unexpected weight gain?</label>
+                    <p><input type="radio" name="weight_gain" value="Yes">Yes</p>
+                    <p><input type="radio" name="weight_gain" value="No">No</p><br>
+                    
+                    <label>Do you experience hair loss or thinning of hair?</label>
+                    <p><input type="radio" name="hair_loss" value="Yes">Yes</p>
+                    <p><input type="radio" name="hair_loss" value="No">No</p><br>
+                    
+                    <label>Do you have dark patches on your skin?</label>
+                    <p><input type="radio" name="dark_patches" value="Yes">Yes</p>
+                    <p><input type="radio" name="dark_patches" value="No">No</p><br>
+                    
+                    <label>Do you experience mood changes?</label>
+                    <p><input type="radio" name="mood_changes" value="Yes">Yes</p>
+                    <p><input type="radio" name="mood_changes" value="No">No</p>
+                </div>
+            </div>
+            <div class="slot">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

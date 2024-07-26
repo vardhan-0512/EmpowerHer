@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='appointment.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>Appointment Form</header><br>
+        <form id="appointmentForm" action="{{ url_for('submit_appointment') }}" method="post">
+            <div class="fields">
+                <div>
+                    <label>Full Name</label>
+                    <p><input type="text" name="full_name" placeholder="Enter Full Name" required></p>
+                    <label>Age in Years</label>
+                    <p><input type="number" name="age" placeholder="Enter Age in Years" required></p>
+                    <label>Email Address</label>
+                    <p><input type="email" name="email" placeholder="Enter Email address" required></p>
+                    <div>
+                        <label for="date">Date</label><br><br>
+                        <input type="date" id="date" name="date" placeholder="Select your date" required><br><br>
+                        
+                        <label for="time">Time</label><br><br>
+                        <input type="time" id="time" name="time" placeholder="Select the time of Appointment" required><br><br>
+                        
+                        <label for="problem">What's Troubling You?</label><br>
+                        <textarea id="problem" name="problem" placeholder="Enter your problem" required></textarea><br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="slot">
+                <button type="submit">Book your Slot</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

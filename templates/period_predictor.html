@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='period.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>Period Prediction Details</header><br>
+        <form action="{{ url_for('predict_period_route') }}" method="POST">
+
+            <div class="fields">
+                <div>
+                    <label>Are you in a reproductive phase</label>
+                    <p><input type="radio" name="reproductive_phase" value="1" required>Yes</p>
+                    <p><input type="radio" name="reproductive_phase" value="0" required>No</p>
+                    <label>Length of Cycle: </label>
+                    <p><input type="number" name="length_of_cycle" placeholder="Enter Length of Cycle" required></p>
+                    <label>Mean Cycle Length: </label>
+                    <p><input type="number" step="0.1" name="mean_cycle_length" placeholder="Enter Mean Cycle Length" required></p>
+                    <label>Length of Menses: </label>
+                    <p><input type="number" name="length_of_menses" placeholder="Enter Length of Menses" required></p>
+                    <label>Day 1: Pads(or)Tampons/Cleaning Frequency </label>
+                    <p><input type="number" name="day1" placeholder="Enter Cleaning Frequency" required></p>
+                    <label>Day 2: Pads(or)Tampons/Cleaning Frequency </label>
+                    <p><input type="number" name="day2" placeholder="Enter Cleaning Frequency" required></p>
+                    <label>Day 3: Pads(or)Tampons/Cleaning Frequency </label>
+                    <p><input type="number" name="day3" placeholder="Enter Cleaning Frequency" required></p>
+                    <label>Day 4: Pads(or)Tampons/Cleaning Frequency </label>
+                    <p><input type="number" name="day4" placeholder="Enter Cleaning Frequency" required></p>
+                    <label>Day 5: Pads(or)Tampons/Cleaning Frequency </label>
+                    <p><input type="number" name="day5" placeholder="Enter Cleaning Frequency" required></p>
+                </div>
+            </div>
+            <div class="slot">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

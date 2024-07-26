@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Response</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='response.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Appointment has been Booked, <b>{{ name }}.</b></h1>
+        <h2>Your appointment is scheduled for <b>{{ appointment_date }} at {{ appointment_time }}.</b></h2>
+        <h2>Check your email at <b>{{ email }}</b> for confirmation details.</h2>
+        <a href="{{ url_for('index') }}" class="go-back-btn">Go Back</a>
+    </div>
+</body>
+</html>

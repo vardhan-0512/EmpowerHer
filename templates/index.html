@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>EmpowerHer</title>
+</head>
+<body>
+    <div class="wrapper">
+		<div class="nav">
+			<div class="logo">
+				<h4>Empower<span style="color:#ca34b6;">Her</span></h4>
+			</div>
+			<div class="links">
+				<a href="#services" class="mainlink">Services</a>
+				<a href="#trackers">Predictors</a>
+				<a href="#infoSection">Blogs</a>
+				<a href="#banner">Appointment</a>
+			</div>
+		</div>
+		<!--Landing Page-->
+		<section id=landing>
+		<div class="landing">
+			<div class="landingText" data-aos="fade-up" data-aos-duration="1000">
+				<h1>Empowering Your <span style="color:#e0501b;">Wellness</span></h1>
+				<h3>
+                    We specialize in women's healthcare solutions, focusing on periods and menstrual health. Our platform provides services like period prediction trackers, mood tracking, and PCOS prediction tools.</h3>
+			</div>
+			<div class="landingImage" data-aos="fade-down" data-aos-duration="2000">
+				<img src="{{ url_for('static', filename='landingimg.png') }}" alt="">
+			</div>
+		</div>
+		</section>
+        <section id="services">
+            <div class="about">	
+                <div class="aboutText" data-aos="fade-left" data-aos-duration="1000">
+                    <h1> &emsp;&ensp; Our Helpful <br> <span style="color:#2f8be0;font-size:3vw"> &emsp; Services</span></h1>
+                    <img src="{{ url_for('static', filename='impimg-Photoroom.png') }}" alt="">
+                </div>
+                <div class="aboutList">
+                    <ol>
+                        <li> 
+                            <span>01</span>
+                             <p><b>Blogs related to women's health</b>: Stay informed with our expert-written blogs on women's health.</p>
+                        </li>
+                        <li>
+                            <span>02</span>
+                            <p><b>Period Prediction</b>: Effortlessly predict your menstrual cycle with our period prediction tool.</p>
+    
+                        </li>
+                        <li>
+                            <span>03</span>
+                            <p><b>PCOS Prediction</b>: Get insights and predictions for managing PCOS with our advanced tools.</p>
+                        </li>
+                        <li>
+                            <span>04</span>
+                            <p><b>Mood Tracker</b>: Gain insights and predictions to manage your mood effectively with our advanced tools.</p>
+                        </li>
+                        <li>
+                            <span>05</span>
+                            <p><b>Doctor Appointment</b> : Easily schedule appointments with top healthcare professionals.</p>
+                        </li>
+                    </ol><br>
+                </div>
+            </div>
+        </section>
+        
+        <section id="trackers">
+            <div class="infoHeader1" data-aos="fade-up" data-aos-duration="1000">
+                <h1 style="font-size:50px; text-align:center;">
+                    <span style="color:#e0501b;">Health Services</span> for you
+                  </h1>
+            </div>  
+            <div class="trackers">
+                <a href="{{ url_for('period_predictor') }}" class="tracker">
+                    <img src="{{ url_for('static', filename='period_predictor.png') }}" alt="Period Tracker">
+                    <h2>Period Prediction</h2>
+                    <p>By analyzing your data, we predict your next cycle date and help you stay prepared.</p>
+                </a>
+                <a href="{{ url_for('pcos_predictor') }}" class="tracker">
+                    <img src="{{ url_for('static', filename='pcos.png') }}" alt="Period Tracker">
+                    <h2>PCOS Prediction</h2>
+                    <p>By analyzing your data, we provide users with the likelihood of having PCOS </p>
+                </a>
+                <a href="predict_mood.html" class="tracker">
+                    <img src="{{ url_for('static', filename='mood.png') }}" alt="Mood Tracker">
+                    <h2>Mood Tracker</h2>
+                    <p>By tracking your mood patterns, we help you understand and manage your emotional well-being</p>
+                </a> 
+            </div> 
+        </section> 
+
+	<!--  INFO SECTION -->
+	<section id="infoSection">
+        <div class="infoSection">
+            <div class="infoHeader" data-aos="fade-up" data-aos-duration="1000">
+                <h1 style="font-size: 50px;"><span style="color: #e0501b;">Blogs</span></h1>
+            </div>
+            <div class="infoCards">
+                <div class="card">
+                    <a href="https://lifewater.org/blog/sanitation-for-women/" class="tracker">
+                        <img src="{{ url_for('static', filename='meditate2.png') }}" alt="Sanitation Problem">
+                        <div class="cardContent">
+                            <h2>Solving The Sanitation Problem For Women</h2>
+                            <p>Safe water access, sanitation, and hygiene (WASH) are the most basic building blocks for empowering women everywhere.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.nhs.uk/conditions/period-pain/" class="tracker">
+                        <img src="{{ url_for('static', filename='meditate3.png') }}" alt="Sanitation Problem">
+                        <div class="cardContent">
+                            <h2>What Are Period Pains And What To Do ?</h2>
+                            <p>Menstruation, or period, is normal vaginal bleeding that happens as part of a woman's monthly cycle. Many women have painful periods, also called dysmenorrhea.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.tandfonline.com/doi/full/10.1080/13573322.2023.2269213" class="tracker">
+                        <img src="{{ url_for('static', filename='meditate.png') }}" alt="Sanitation Problem">
+                        <div class="cardContent">
+                            <h2>Period Perspectives</h2>
+                            <p>Explore the intricate tapestry of femininity in 'Period Perspectives.' Unveil the wisdom, challenges, and resilience embedded in each menstrual cycle. Empower, embrace, and evolve with every phase.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+        
+    <section id="banner">
+        <div class="banner">
+            <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
+                <h1>Take Charge of Your Menstrual Health<br> 
+                    <span style="font-size:1.2vw;font-weight:normal" class="bannerInnerText">
+                        Managing menstrual health can be challenging amidst the demands of daily life. Don't let discomfort or irregularities go unchecked. If you're feeling uneasy, it's time to prioritize your health. Book your <b>doctor appointment</b> now and get the care you deserve.<br>
+                        <a class="doctor" href="{{ url_for('doctor_appointment') }}"> Book Your Appointment! →</a>
+                    </span> 
+                </h1>   
+            </div>
+            <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+                <img src="{{ url_for('static', filename='appimg.png') }}" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+        <div class="footer">
+            <h2>WomenWell.</h2>
+            <div class="footerlinks">
+                <a href="#services" class="mainlink">Services</a>
+                <a href="#trackers">Predictors</a>
+                <a href="#infoSection">Blogs</a>
+                <a href="#banner">Appointment</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

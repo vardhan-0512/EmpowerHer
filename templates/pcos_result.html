@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='response.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>Prediction Result</header><br>
+        <p>Result: {{ prediction }}%</p>
+        {% if prediction > 50 %}
+            <p style="color: red;">Your risk of having PCOS is higher than 50%. Please consult a doctor for a thorough evaluation and diagnosis.</p>
+        {% endif %}
+        <a href="{{ url_for('index') }}">Go Back</a>
+    </div>
+</body>
+</html>
