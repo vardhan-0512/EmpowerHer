@@ -33,7 +33,6 @@ EmpowerHer is a machine learning–powered web platform designed to support wome
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap  
 - **Backend**: Python (Flask)  
 - **Machine Learning**: scikit-learn, pandas  
-- **Database**: SQLite / PostgreSQL  
 - **Other**: Flask-Mail, calendar integration, REST APIs
 
 ---
