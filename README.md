@@ -24,7 +24,6 @@ EmpowerHer is a machine learning–powered web platform designed to support wome
 
 - 🔬 Addressed challenges faced by **1 in 10 women diagnosed with PCOS**  
 - 📈 Tackled menstrual irregularities affecting **75%+ of women**  
-- 👥 Reached over **1,000 users** in the first 3 months  
 - 🧪 ML accuracy: **89.6%** for predictions across key health metrics  
 
 ---
